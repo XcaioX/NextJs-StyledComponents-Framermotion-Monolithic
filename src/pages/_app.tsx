@@ -1,4 +1,3 @@
-import '../styles/tailwind.css'
 import { AppProps } from 'next/app'
 import { Provider as ReduxProvider } from 'react-redux'
 import { AnimateSharedLayout } from 'framer-motion'
