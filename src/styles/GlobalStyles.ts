@@ -19,9 +19,12 @@ export default createGlobalStyle`
   }
 
   ul { list-style: none }
-  a { text-decoration: none }
+  a {
+    text-decoration: none;
+    color: inherit
+  }
 
-  body, input, button {
+  body, input, button, textarea {
     border: 0;
     background: none;
     font-family: Roboto, -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
@@ -33,9 +36,15 @@ export default createGlobalStyle`
     font-size: 1rem
   }
 
-  @media (min-width: 700px) {
-    :root {
-      font-size: 62.5%
+  @media (min-width: 1080px) {
+    html {
+      font-size: 93.75%
+    }
+  }
+
+  @media (min-width: 720px) {
+    html {
+      font-size: 87.5%
     }
   }
 `
