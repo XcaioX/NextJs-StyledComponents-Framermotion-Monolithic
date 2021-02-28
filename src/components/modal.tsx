@@ -1,4 +1,4 @@
-import { Container } from './styles'
+import { Container } from '@/styles/components/modal'
 
 export const Modal: React.FC = ({ children }) => {
   return (
