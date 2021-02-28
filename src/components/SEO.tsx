@@ -1,4 +1,4 @@
-import { Head } from 'next/document'
+import Head from 'next/head'
 
 interface SEOProps {
   title: string
@@ -15,7 +15,7 @@ const SEO: React.FC<SEOProps> = ({
   shouldExcludeTitleSufix = false,
   shouldIndexPage = true
 }) => {
-  const pageTitle = `${title} ${!shouldExcludeTitleSufix ? '| GoFinance' : ''}`
+  const pageTitle = `${title} ${!shouldExcludeTitleSufix ? '| Prefix' : ''}`
   const pageImage = image ? `${process.env.NEXT_PUBLIC_URI}/${image}` : null
 
   return (
